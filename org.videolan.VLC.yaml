@@ -46,7 +46,7 @@ cleanup-commands:
   - mkdir -p /app/share/vlc/extra
   - ln -s /app/share/vlc/extra/plugins /app/lib/vlc/plugins/extra
   - rm -f /app/lib/vlc/plugins/plugins.dat
-  - /app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins
+  - /app/libexec/vlc/vlc-cache-gen /app/lib/vlc/plugins
 build-options:
   env:
     V: '1'
